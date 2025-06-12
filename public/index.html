@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Dictionary</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="pulse">Urban Dictionary</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter a term..." autocomplete="off">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="filter-options">
+            <label>
+                <input type="checkbox" id="safe-search" checked>
+                Safe Search
+            </label>
+            <select id="sort-by">
+                <option value="thumbs_up">Most Liked</option>
+                <option value="thumbs_down">Most Disliked</option>
+                <option value="random">Random</option>
+            </select>
+        </div>
+        <div id="results"></div>
+        <div class="history-container">
+            <h3>Recent Searches</h3>
+            <div id="search-history"></div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

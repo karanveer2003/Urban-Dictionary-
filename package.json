@@ -1,0 +1,22 @@
+{
+  "name": "assign3-css-precomiler",
+  "version": "1.0.0",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "karanisawesome": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run goservergo\" \"npm run karanisawesome\""
+  },
+  "keywords": [],
+  "author": "karan",
+  "license": "public",
+  "private": true,
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.79.5"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.7.1"
+  }
+}
